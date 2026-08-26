@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Phat Nguyen Thuan — AI research, inference systems, multimodal learning, and agent infrastructure." />
+    <meta name="theme-color" content="#0b0d12" />
+    <title>Phat Nguyen Thuan — AI Research & Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Back to top">PN<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-link" href="https://github.com/RyanNg1403" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-kicker"><span class="status-dot"></span> AI student · builder · researcher</div>
+        <h1>I build systems that make <em>AI useful</em> under constraints.</h1>
+        <p class="hero-copy">I’m Phat Nguyen Thuan, an Artificial Intelligence student at UIT-VNUHCM working across efficient LLM inference, multimodal computer vision, and agent infrastructure.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore the work <span>↓</span></a>
+          <a class="button button-quiet" href="https://www.linkedin.com/in/phat-nguyen-thuan" target="_blank" rel="noreferrer">Let’s connect <span>↗</span></a>
+          <a class="button button-quiet" href="assets/Phat-Nguyen-Thuan-CV.pdf" target="_blank">Download CV <span>↓</span></a>
+        </div>
+        <div class="signal-line"><span>Currently exploring</span><b>KV-cache systems</b><i>·</i><b>VLMs</b><i>·</i><b>MCP evaluation</b></div>
+      </section>
+
+      <section class="focus-band">
+        <div class="section-shell focus-grid">
+          <div class="focus-label">01 / What I’m<br />thinking about</div>
+          <article class="focus-card focus-card-accent">
+            <span class="card-index">01</span>
+            <h2>Inference<br />as a system</h2>
+            <p>PagedAttention, FlashAttention, continuous batching, speculative decoding, and the latency/throughput decisions between them.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-index">02</span>
+            <h2>Seeing<br />across modalities</h2>
+            <p>Vision-language retrieval, video understanding, 3D object grounding, and robust perception in messy real-world scenes.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-index">03</span>
+            <h2>Agents that<br />can be measured</h2>
+            <p>MCP tool interfaces, memory architectures, and evaluation loops that turn agent demos into dependable systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section-shell work-section">
+        <div class="section-heading">
+          <div><span class="eyebrow">02 / Selected work</span><h2>Things I’ve<br /><em>made useful.</em></h2></div>
+          <p>Research prototypes, open-source tools, and experiments where the implementation matters as much as the idea.</p>
+        </div>
+        <div class="project-grid">
+          <a class="project-card project-card-featured" href="https://github.com/RyanNg1403/agentic-search-vs-rag" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Experiment · Python</span><span class="arrow">↗</span></div>
+            <h3>Agentic Search<br /><span>vs traditional RAG</span></h3>
+            <p>A reproducible study of context-tree search for code retrieval. Agentic search reached ~2× better retrieval accuracy while using 99% fewer tokens.</p>
+            <div class="project-foot"><span>13 ★</span><span>Reproducible evaluation</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/RyanNg1403/finetune-whisper" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">ML systems · Python</span><span class="arrow">↗</span></div>
+            <h3>Fine-tuning Whisper<br /><span>for AI vocabulary</span></h3>
+            <p>On-device Apple Silicon fine-tuning for technical terms. WER improved from 7.74% to 1.61%; strict term recall reached 98.58%.</p>
+            <div class="project-foot"><span>1 ★</span><span>PyTorch · MPS</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/RyanNg1403/tieplm" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Multimodal RAG · Python</span><span class="arrow">↗</span></div>
+            <h3>TiepLM<br /><span>course intelligence</span></h3>
+            <p>A NotebookLM-style assistant for deep-learning lectures: hybrid retrieval, reranking, cited answers, timestamped video summaries, and question generation.</p>
+            <div class="project-foot"><span>3 ★</span><span>FastAPI · React · Qdrant</span></div>
+          </a>
+          <a class="project-card" href="https://github.com/RyanNg1403/python-pydantic-ai-mcp-agent" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Agent infrastructure · Python</span><span class="arrow">↗</span></div>
+            <h3>Pydantic AI<br /><span>+ MCP agent</span></h3>
+            <p>A type-safe agent that combines web browsing, local Ollama models, Chainlit, and MCP tools behind a single interactive workflow.</p>
+            <div class="project-foot"><span>5 ★</span><span>Type-safe tool use</span></div>
+          </a>
+          <a class="project-card project-card-wide" href="https://github.com/RyanNg1403/uit-cli" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Open source · TypeScript</span><span class="arrow">↗</span></div>
+            <h3>uit-cli <span>— the course LMS from your terminal</span></h3>
+            <p>Agent-native CLI for Moodle: inspect courses, download lectures, check deadlines, read announcements, and submit assignments.</p>
+            <div class="project-foot"><span>3 ★</span><span>Node.js · Moodle API</span></div>
+          </a>
+          <a class="project-card project-card-wide" href="https://github.com/RyanNg1403/byterover-skills" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Agent tooling · MCP</span><span class="arrow">↗</span></div>
+            <h3>ByteRover skills <span>— memory workflows for coding agents</span></h3>
+            <p>Specialized skills for persistent knowledge management, documentation generation, Notion sync, and reusable agent workflows.</p>
+            <div class="project-foot"><span>7 ★</span><span>Claude Code · MCP</span></div>
+          </a>
+          <a class="project-card project-card-wide" href="https://github.com/campfirein/byterover-cli" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Contribution · TypeScript</span><span class="arrow">↗</span></div>
+            <h3>ByteRover CLI <span>— persistent agent memory</span></h3>
+            <p>Open-source portable memory layer for autonomous coding agents, with persistent, shareable context across tools and projects.</p>
+            <div class="project-foot"><span>Open source</span><span>TypeScript · MCP</span></div>
+          </a>
+          <a class="project-card project-card-wide" href="https://github.com/campfirein/brv-bench" target="_blank" rel="noreferrer">
+            <div class="project-top"><span class="project-type">Contribution · Python</span><span class="arrow">↗</span></div>
+            <h3>brv-bench <span>— memory evaluation</span></h3>
+            <p>Benchmark suite measuring retrieval quality and latency for AI-agent memory systems, including the LoCoMo and LongMemEval harnesses.</p>
+            <div class="project-foot"><span>Evaluation</span><span>LoCoMo · LongMemEval</span></div>
+          </a>
+        </div>
+        <a class="all-work-link" href="https://github.com/RyanNg1403?tab=repositories" target="_blank" rel="noreferrer">See all repositories <span>↗</span></a>
+      </section>
+
+      <section id="research" class="research-section">
+        <div class="section-shell">
+          <div class="section-heading research-heading">
+            <div><span class="eyebrow">03 / Research</span><h2>Questions worth<br /><em>publishing.</em></h2></div>
+            <p>My papers sit at the intersection of perception, language, and systems that help models reason over more than one kind of signal.</p>
+          </div>
+          <div class="paper-list">
+            <a class="paper-row" href="https://arxiv.org/abs/2604.01599" target="_blank" rel="noreferrer"><span class="paper-year">2026</span><span class="paper-title">ByteRover: Agent-Native Memory Through LLM-Curated Hierarchical Context</span><span class="paper-venue">arXiv ↗</span></a>
+            <a class="paper-row" href="https://doi.org/10.1016/j.cag.2025.104400" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span class="paper-title">ROOMELSA: Multimodal Enhanced Language and Spatial Assistance</span><span class="paper-venue">Computers &amp; Graphics ↗</span></a>
+            <a class="paper-row" href="https://doi.org/10.1007/978-981-96-4291-5_17" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span class="paper-title">A Hybrid Video Retrieval System Using CLIP and BEiT-3</span><span class="paper-venue">Springer CCIS ↗</span></a>
+            <a class="paper-row" href="https://ieeexplore.ieee.org/document/11133808" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span class="paper-title">Robust Traffic Vehicle Detection with Misclassified Vehicles Minimization</span><span class="paper-venue">IEEE MAPR ↗</span></a>
+          </div>
+          <div class="research-note"><span class="note-mark">✳</span><p><b>1st place</b> — SHREC 2025 ROOMELSA track<br /><b>2nd place</b> — SoICT Hackathon 2024 traffic detection<br /><b>2nd place</b> — HCMC AI Challenge 2024 video retrieval</p></div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell about-section">
+        <div class="about-grid">
+          <div><span class="eyebrow">04 / Experience</span><h2>From research<br />to <em>real systems.</em></h2></div>
+          <div class="timeline">
+            <article class="timeline-item"><div class="timeline-meta"><span>07/2026 — now</span><span>Amaris Consulting</span></div><h3>Junior AI Specialist</h3><p>Building an MCP server for AMAIA Services and evaluating MCP-enabled agent workflows for software quality assurance.</p></article>
+            <article class="timeline-item"><div class="timeline-meta"><span>07/2025 — 06/2026</span><span>ByteRover</span></div><h3>AI Engineer &amp; Developer Advocate</h3><p>Evaluated agent-native memory systems on LoCoMo and LongMemEval, contributed to the open-source CLI and evaluation pipelines, and co-authored the team paper on hierarchical memory.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lab-section">
+        <div class="section-shell lab-grid">
+          <div><span class="eyebrow">05 / Field notes</span><h2>Experiments<br />with <em>hardware.</em></h2></div>
+          <div class="lab-copy"><p>At HCMC AI Meetup and OpenInfra Vietnam, I presented our work training LGM on NVIDIA GH200. The work involved ARM64 build constraints, xFormers/FlashAttention compatibility, NVLink-C2C, and comparing GH200 against A100/H100 for practical LLM workloads.</p><a href="assets/GH200-ARM64-training.pdf" target="_blank">Read the GH200 slides <span>↗</span></a><br /><a href="https://github.com/RyanNg1403" target="_blank" rel="noreferrer">More experiments on GitHub <span>↗</span></a></div>
+          <div class="metric"><strong>4.5<span>h</span></strong><small>GH200 training time<br />in our reported experiment</small></div>
+          <div class="metric"><strong>10<span>h</span></strong><small>A100 training time<br />same settings</small></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div><span class="eyebrow">Let’s build the next useful thing.</span><h2>Phat Nguyen<br /><em>Thuan</em></h2></div>
+      <div class="footer-links"><a href="https://www.linkedin.com/in/phat-nguyen-thuan" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/RyanNg1403" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="footer-bottom"><span>HCMC, Vietnam</span><span>© <span id="year"></span> Phat Nguyen Thuan</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
